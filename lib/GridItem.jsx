@@ -101,8 +101,8 @@ export default class GridItem extends React.Component {
 
   // Helper for generating column width
   calcColWidth(): number {
-    const {margin, containerWidth, cols} = this.props;
-    return (containerWidth - (margin[0] * (cols + 1))) / cols;
+    const {rowHeight} = this.props;
+    return rowHeight;
   }
 
   /**
